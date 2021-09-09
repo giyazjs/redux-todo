@@ -6,9 +6,9 @@ const initialState = {
 }
 
 export const TodoReducer = (state = initialState, action) => {
-    switch(action.type){
+    switch (action.type) {
         case SET_INPUT:
-            return{...state, input: action.payload}
+            return {...state, input: action.payload}
         case SET_TODOS:
             return {...state, todos: action.payload}
         case ADD_TODO:
@@ -16,5 +16,4 @@ export const TodoReducer = (state = initialState, action) => {
         default:
             return {...state}
     }
-
 }
